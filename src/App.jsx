@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter, Route, Router, Routes, useLocation } from 'react-router-dom'
 // import Navbar from './Components/home/Navbar'
 import Footer from './Components/home/Footer'
-
 import SignupPage from './Components/User/Signup'
 import LoginPage from './Components/User/Login'
 import OTPPage from './Components/User/Otp'
