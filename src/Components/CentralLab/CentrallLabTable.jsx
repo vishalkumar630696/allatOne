@@ -1,7 +1,7 @@
 
 
 import React, { useState } from 'react'
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import CentralLabForm from './CentralLabForm';
 import "../Style/FormTable.css"
 import jsPDF from "jspdf";
@@ -60,6 +60,9 @@ export default function CentrallLabTable({ records, handleDelete }) {
 
           {/* ADD BUTTON */}
           <div className="d-flex justify-content-end p-3">
+            <button className="btn btn-light"  >
+           <Link  to="/centrallab/lablist" style={{textDecoration:"none", color:"black", margin:"20px"}} >+Lab List</Link>
+            </button>
             <button
               className="btn btn-light"
               onClick={() => setShowForm(!showForm)}

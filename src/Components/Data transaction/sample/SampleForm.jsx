@@ -110,7 +110,7 @@ export default function SampleForm({ editData }) {
     return (
         <div className={`form-container ${isEdit ? "edit-form" : ""}`}>
             <div className="form-card">
-                <h2 className="form-title cl2">Sample Registra</h2>
+                <h2 className="form-title cl2">Sample</h2>
 
                 {message && <div className="custom-alert">{message}</div>}
 
@@ -120,7 +120,12 @@ export default function SampleForm({ editData }) {
                         <div className="form-row">
                             <div className="form-group">
                                 <label><FaFlask /> Sample Name</label>
-                                <input name="sampleName" value={data.sampleName} onChange={handleChange} />
+                                <input 
+                                    name="sampleName" 
+                                    value={data.sampleName} 
+                                    onChange={handleChange} 
+                                    placeholder="Enter sample name"
+                                />
                                 {errors.sampleName && (
                                     <small className="text-danger">
                                         {errors.sampleName}
@@ -130,7 +135,12 @@ export default function SampleForm({ editData }) {
 
                             <div className="form-group">
                                 <label><FaBuilding /> Lab Code</label>
-                                <input name="labCode" value={data.labCode} onChange={handleChange} />
+                                <input 
+                                    name="labCode" 
+                                    value={data.labCode} 
+                                    onChange={handleChange} 
+                                    placeholder="Enter lab code"
+                                />
                                 {errors.labCode && (
                                     <small className="text-danger">
                                         {errors.labCode}
@@ -142,7 +152,12 @@ export default function SampleForm({ editData }) {
                         <div className="form-row">
                             <div className="form-group">
                                 <label><FaProjectDiagram /> Project ID</label>
-                                <input name="projectId" value={data.projectId} onChange={handleChange} />
+                                <input 
+                                    name="projectId" 
+                                    value={data.projectId} 
+                                    onChange={handleChange} 
+                                    placeholder="Enter project ID"
+                                />
                                 {errors.projectId && (
                                     <small className="text-danger">
                                         {errors.projectId}
@@ -152,7 +167,12 @@ export default function SampleForm({ editData }) {
 
                             <div className="form-group">
                                 <label><FaHashtag /> Batch No</label>
-                                <input name="batchNo" value={data.batchNo} onChange={handleChange} />
+                                <input 
+                                    name="batchNo" 
+                                    value={data.batchNo} 
+                                    onChange={handleChange} 
+                                    placeholder="Enter batch number"
+                                />
                                 {errors.batchNo && (
                                     <small className="text-danger">
                                         {errors.batchNo}
@@ -164,7 +184,12 @@ export default function SampleForm({ editData }) {
                         <div className="form-row">
                             <div className="form-group">
                                 <label>Sample Type</label>
-                                <input name="sampleType" value={data.sampleType} onChange={handleChange} />
+                                <input 
+                                    name="sampleType" 
+                                    value={data.sampleType} 
+                                    onChange={handleChange} 
+                                    placeholder="Enter sample type"
+                                />
                                 {errors.sampleType && (
                                     <small className="text-danger">
                                         {errors.sampleType}
@@ -174,7 +199,12 @@ export default function SampleForm({ editData }) {
 
                             <div className="form-group">
                                 <label><FaCalendarAlt /> Date Received</label>
-                                <input type="date" name="dateReceived" value={data.dateReceived} onChange={handleChange} />
+                                <input 
+                                    type="date" 
+                                    name="dateReceived" 
+                                    value={data.dateReceived} 
+                                    onChange={handleChange} 
+                                />
                                 {errors.dateReceived && (
                                     <small className="text-danger">
                                         {errors.dateReceived}
@@ -186,7 +216,12 @@ export default function SampleForm({ editData }) {
                         <div className="form-row">
                             <div className="form-group">
                                 <label>Test Required</label>
-                                <input name="testRequired" value={data.testRequired} onChange={handleChange} />
+                                <input 
+                                    name="testRequired" 
+                                    value={data.testRequired} 
+                                    onChange={handleChange} 
+                                    placeholder="Enter required test"
+                                />
                                 {errors.testRequired && (
                                     <small className="text-danger">
                                         {errors.testRequired}
@@ -196,7 +231,12 @@ export default function SampleForm({ editData }) {
 
                             <div className="form-group">
                                 <label><FaCheckCircle /> Priority</label>
-                                <input name="priority" value={data.priority} onChange={handleChange} />
+                                <input 
+                                    name="priority" 
+                                    value={data.priority} 
+                                    onChange={handleChange} 
+                                    placeholder="Enter priority (High/Medium/Low)"
+                                />
                                 {errors.priority && (
                                     <small className="text-danger">
                                         {errors.priority}

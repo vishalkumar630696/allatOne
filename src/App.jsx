@@ -2,32 +2,43 @@ import React from 'react'
 import { BrowserRouter, Route, Router, Routes, useLocation } from 'react-router-dom'
 // import Navbar from './Components/home/Navbar'
 import Footer from './Components/home/Footer'
-import UserScientistForm from './Components/UserScientist/UserScientistForm'
-import ProjectForm from './Components/Project Master/ProjectForm'
 
 import SignupPage from './Components/User/Signup'
 import LoginPage from './Components/User/Login'
 import OTPPage from './Components/User/Otp'
 
+import UserScientistForm from './Components/UserScientist/UserScientistForm'
 import UserScientistPage from './Components/UserScientist/UserScientistPage'
+
 import IntrumentPage from './Components/instrument/IntrumentPage'
 import InstrumentForm from './Components/instrument/InstrumentForm'
+
 import RawMaterialPage from './Components/Rowmatairiel/RowMetairialPage'
 import RowMetairialForm from './Components/Rowmatairiel/RowMetairialForm'
+
+import ProjectForm from './Components/Project Master/ProjectForm'
 import ProjecPage from './Components/Project Master/ProjecPage'
+
 import TestPage from './Components/Test/TestPage'
 import TestForm from './Components/Test/TestForm'
+
 import CentrallabPage from './Components/CentralLab/CentralLabPage'
 import CentralLabForm from './Components/CentralLab/CentralLabForm'
+
 import Dashboard from './Components/home/Dashboard'
+
 import SamplePage from './Components/Data transaction/sample/samplePage'
 import SampleForm from './Components/Data transaction/sample/SampleForm'
+
 import ExperimentPage from './Components/Data transaction/Experiment/ExperimentPage'
 import ExperimentForm from './Components/Data transaction/Experiment/ExperimentForm'
+
 import AnalyticalTestPage from './Components/Data transaction/AnalyticalTest/AnalyticalTestPage'
 import AnalyticalTestForm from './Components/Data transaction/AnalyticalTest/AnalyticalTestForm'
+
 import StudyPage from './Components/Data transaction/studiesRecords/Studypage'
 import StudyForm from './Components/Data transaction/studiesRecords/StudyForm'
+
 import Projectlist from './Components/userList/Projectlist'
 import LabList from './Components/userList/LabList'
 import DownloadResults from './Components/DownloadResults'
@@ -101,12 +112,9 @@ export default function App() {
         <Route  path='/signup' element={<SignupPage />} />
         <Route path='/' element={<LoginPage />} />
         <Route path='/otp' element={<OTPPage />} />
-        <Route path='/projectlist' element={<Projectlist />} />
-        <Route path='/lablist' element={<LabList />} />
-       
-
+        <Route path='/project/projectlist' element={<Projectlist />} />
+        <Route path='/centrallab/lablist' element={<LabList />} />
       </Routes>
-
       <Footer />
     </>
   );

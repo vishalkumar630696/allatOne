@@ -1,4 +1,4 @@
-/* body {
+body {
   font-family: Arial, Helvetica, sans-serif;
   background: #8ac6f4;
 }
@@ -77,21 +77,21 @@
   width: 100%;
   border: none;
   background: rgb(10, 67, 225);
-  /* background: linear-gradient(135deg, #ff7f50, #ffb347); */
-  color: white;
-  font-size: 16px;
+  background: linear-gradient(135deg, #ff7f50, #ffb347);
+   color: white; */
+   font-size: 16px;
   border-radius: 8px;
-  cursor: pointer;
-  /* transition: background 0.3s, transform 0.2s; */
-}
+  cursor: pointer; */
+ transition: background 0.3s, transform 0.2s; 
+} 
 
 .btn-submit:hover {
   background: rgb(19, 73, 220);
   transform: translateY(-2px);
-} */
+} 
 
-/* Optional: Add icon style */
-/* .form-group i {
+/* Optional: Add icon style  */
+ .form-group i {
   color: #03396c;
   font-size: 16px;
 }
@@ -104,7 +104,7 @@
   color: linear-gradient(135deg, #01257D, #00FFFF);
 } */
 
-/* .navbar-nav .nav-link {
+ .navbar-nav .nav-link {
   color: white !important; 
   transition: color 0.3s;
 }
@@ -169,4 +169,4 @@ form:hover {
 .all-table th,
 .all-table td {
   white-space: nowrap;
-} */
+}

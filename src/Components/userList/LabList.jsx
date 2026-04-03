@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import {
-  FaFlask,
   FaVial,
   FaUser,
   FaBoxes,
@@ -64,12 +63,6 @@ export default function LabList() {
                   </td>
 
                   <td className="action-icons">
-
-                    <FaFlask
-                      title="Sample"
-                      className="icon blue"
-                      onClick={() => navigate("/sample")}
-                    />
 
                     <FaVial
                       title="Test"

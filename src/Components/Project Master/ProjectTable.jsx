@@ -1,7 +1,7 @@
 
 
 import React, { useState } from 'react'
-import { useNavigate } from "react-router-dom"
+import { useNavigate ,Link} from "react-router-dom"
 import ProjectForm from './ProjectForm'
 import "../Style/FormTable.css"
 import jsPDF from "jspdf";
@@ -62,8 +62,14 @@ export default function ProjectTable({ records, handleDelete }) {
 
         <div className="card" style={{ marginTop: "30px" }}>
 
-          {/* 🔥 ADD BUTTON TOP RIGHT */}
+          {/*  ADD BUTTON TOP RIGHT */}
           <div className="d-flex justify-content-end p-3">
+            <button
+              className="btn btn-light">
+               <Link  to="/project/projectlist" style={{textDecoration:"none", color:"black", margin:"20px"}} >+Project List</Link>
+              </button>
+            
+              
             <button
               className="btn btn-light"
               onClick={() => setShowForm(!showForm)}
